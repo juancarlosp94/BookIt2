@@ -1,4 +1,4 @@
-import { CardsFilter } from "../../organisms/CardsFilter"
+import { CardsFilter } from "../../organisms/cardsFilter"
 
 export const CardsFilterTemplate = () => {
 
