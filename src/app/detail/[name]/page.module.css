@@ -1,0 +1,72 @@
+.container {
+    background: white;
+    box-shadow: rgba(16, 15, 15, 0.1) 8px 0.25rem 0.5rem;
+    padding: 20px;
+    margin: 40px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 85vh;
+}
+
+
+.containerInfo {
+    background: white;
+    box-shadow: rgba(48, 48, 48, 0.1) 0px 0.25rem 0.5rem;
+}
+
+.titleHotel {
+    color: orange;
+    /* color: rgb(128, 15, 113); */
+    font-size: 28px;
+    font-weight: bold;
+}
+
+
+.descriptionHotel {
+
+    font-size: 16px;
+}
+
+.detailImage {
+    border-radius: 10px;
+    border: 2px solid red;
+}
+.coutryCityHotel,
+.priceHotel {
+    font-size: 14px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.buttonContainer {
+    display: flex;
+    gap: 10px;
+    margin: 20px 0 0 0 ;
+}
+
+.buttonCardHotel {
+    font-size: 12px;
+    font-weight: bold;
+    color: #ffffff !important;
+    text-decoration: none;
+    background-color: orange !important;
+    width: 120px;
+}
+
+.buttonSecondary {
+    font-size: 12px;
+    font-weight: bold;
+    color: orange !important;
+    text-decoration: none;
+    background-color: white !important;
+    border: orange solid 2px;
+    width: 120px;
+}
+
+.buttonCardHotel:hover {
+    color: orange;
+    border: 1px solid orange;
+}

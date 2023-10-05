@@ -1,11 +1,12 @@
 "use client"
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { hotelData } from "../../services/getHotelServices";
 import { HotelCard } from "../molecules/card/card";
 import { Header } from "../molecules/header/header";
 import { hotelRooms } from "@/app/utils/helper";
 import { Alert, Snackbar } from "@mui/material";
 import styles from "./cardsFilter.module.css"
+import { AppContext } from "@/app/store/CurrentProvider";
 
 export const CardsFilter = ({getHotelsData}) => {
     
@@ -16,6 +17,11 @@ export const CardsFilter = ({getHotelsData}) => {
     const [selectedDateTo, setSelectedDateTo] = useState('all');
     const [filterHotel, setFileterHotel] = useState([]);
     const [showSnackbar, setShowSnackbar] = useState(false);
+    const {setHomePage} = useContext(AppContext);
+
+  useEffect(() => {
+    setHomePage()
+  }, [])
     // const [hotelsData, setHotelsData] = useState([]);
 
     // const fetchHotels = async() => {

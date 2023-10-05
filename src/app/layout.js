@@ -1,8 +1,9 @@
 import { Menu } from '../../components/molecules/menu/menu'
 import './globals.css'
 import { Pacifico } from 'next/font/google'
+import { CurrentProvider } from './store/CurrentProvider'
 
-const pacifico = Pacifico({ subsets: ['latin'] , weight:[ '400'] })
+const pacifico = Pacifico({ subsets: ['latin'], weight: ['400'] })
 
 export const metadata = {
   title: 'Book It',
@@ -12,13 +13,14 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <>
-    <html lang="en">
-      
-      <body className={pacifico.className}>
-        <Menu/>
-        {children}
+      <html lang="en">
+        <CurrentProvider>
+        <body className={pacifico.className}>
+          <Menu />
+          {children}
         </body>
-    </html>
+        </CurrentProvider>
+      </html>
     </>
   )
 }

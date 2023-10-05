@@ -11,6 +11,7 @@ export default async function Home() {
 
   const getHotelsData = await hotelData();
   
+  
   return (
     <>
         <CardsFilterTemplate getHotelsData={getHotelsData}/>
