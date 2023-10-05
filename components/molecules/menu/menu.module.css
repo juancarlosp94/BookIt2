@@ -1,0 +1,25 @@
+.containerMenu {
+    position: fixed;
+    background-color: rgba(240, 248, 255, 0.219);
+    z-index: 100;
+}
+
+.contentOptionMenu {
+    display: flex;
+    justify-content: flex-end;
+    gap: 0.5rem;
+    color: black;
+    
+}
+
+.labelMenu{
+    color: black;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.labelMenu:hover{
+    color: orange;
+    transition-duration: 400ms;
+    cursor: pointer;
+}

@@ -1,3 +1,4 @@
+import { Menu } from '../../components/molecules/menu/menu'
 import './globals.css'
 import { Pacifico } from 'next/font/google'
 
@@ -10,8 +11,14 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
+    <>
     <html lang="en">
-      <body className={pacifico.className}>{children}</body>
+      
+      <body className={pacifico.className}>
+        <Menu/>
+        {children}
+        </body>
     </html>
+    </>
   )
 }

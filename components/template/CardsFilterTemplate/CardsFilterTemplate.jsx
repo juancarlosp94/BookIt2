@@ -1,8 +1,8 @@
 import { CardsFilter } from "../../organisms/cardsFilter"
 
-export const CardsFilterTemplate = () => {
+export const CardsFilterTemplate = ({getHotelsData}) => {
 
     return (
-        <CardsFilter/>
+        <CardsFilter getHotelsData={getHotelsData}/>
     )
 }
