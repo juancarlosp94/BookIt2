@@ -29,14 +29,18 @@ export const Menu = () => {
       <AppBar position="static" className={styles.containerMenu}>
         <Toolbar variant="dense" className={styles.contentOptionMenu}>
           <h3>{title(currentPage)}</h3>
-          <Link href={'/'}>
+          <div className={styles.labelBlock}>
+          <Link className={styles.labelLink} href={'/'}>
           <Typography variant="h6" component="div" className={styles.labelMenu}>
             Home
           </Typography>
           </Link>
+          <Link href={'/hotelsBooked'}>
           <Typography variant="h6"component="div" className={styles.labelMenu}>
             Booked
           </Typography>
+          </Link>
+          </div>
         </Toolbar>
       </AppBar>
     </Box>

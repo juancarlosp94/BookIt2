@@ -6,16 +6,39 @@
 
 .contentOptionMenu {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     gap: 0.5rem;
     color: black;
     
+}
+
+.contentOptionMenu h3 {
+    font-size: 3rem;
+    color: white;
+    border: black solid 5px;
+    background-color:rgba(240, 248, 255, 0.514);
+    padding-right: 1rem;
+}
+
+.contentOptionMenu h3:hover{
+    color: orange;
+    transition-duration: 400ms;
+    cursor: pointer;
+}
+
+.labelBlock {
+    display: flex;
 }
 
 .labelMenu{
     color: black;
     font-weight: bold;
     font-size: 2rem;
+    padding-right: 2rem;
+}
+
+.labelLink{ 
+    text-decoration: none;
 }
 
 .labelMenu:hover{

@@ -8,14 +8,34 @@ import Typography from '@mui/material/Typography';
 import styles from './card.module.css'
 import { MainButton } from '../../atoms/button/button';
 import Link from 'next/link';
+import { useDispatch, useSelector } from 'react-redux';
+import { addHotel } from '@/app/store/bookingSlice';
 
 export const HotelCard = ({ hotel, snackbar }) => {
 
+  const dispatch = useDispatch();
+
+  const listHotelsBooked = useSelector(
+    (state) => state.booking.hotelsBooked
+  );
     
   const handleClick =()=> {
     localStorage.setItem('selectedHotel', JSON.stringify(hotel))
 
   };
+
+  const handleBooking = () => {
+
+    const hotelExists = listHotelsBooked.some((hotels) => hotels.name === hotel.name);
+
+    if (hotelExists) {
+      alert('You already booked this tour!')
+    } else {
+      dispatch(addHotel(hotel));
+      snackbar(true);
+    }
+
+  }
 
   return (
     <Card sx={{ maxWidth: 345 }}>
@@ -52,7 +72,7 @@ export const HotelCard = ({ hotel, snackbar }) => {
           </MainButton>
         </Link>
         <MainButton className={styles.buttonCardHotel}
-          onClick={() => snackbar(true)}>
+          onClick={handleBooking} >
           Book hotel
         </MainButton>
       </CardActions>
