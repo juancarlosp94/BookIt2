@@ -4,7 +4,7 @@ import { HotelCard } from "../molecules/card/Card";
 import { Header } from "../molecules/header/Header";
 import { hotelRooms } from "@/app/utils/helper";
 import { Alert, Snackbar } from "@mui/material";
-import styles from "./cardsFilter.module.css"
+import styles from "./CardsFilter.module.css"
 import { AppContext } from "@/app/store/CurrentProvider";
 
 export const CardsFilter = ({getHotelsData}) => {

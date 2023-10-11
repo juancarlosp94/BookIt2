@@ -1,4 +1,4 @@
-import { HotelsBooking } from "../../organisms/hotelsBooking/hotelsBooking"
+import { HotelsBooking } from "../../organisms/hotelsBooking/HotelsBooking"
 
 
 const HotelsBookingTemplate = () => {

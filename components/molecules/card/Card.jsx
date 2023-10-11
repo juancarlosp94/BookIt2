@@ -5,8 +5,8 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
-import styles from './card.module.css'
-import { MainButton } from '../../atoms/button/button';
+import styles from './Card.module.css'
+import { MainButton } from '../../atoms/button/Button';
 import Link from 'next/link';
 import { useDispatch, useSelector } from 'react-redux';
 import { addHotel } from '@/app/store/bookingSlice';

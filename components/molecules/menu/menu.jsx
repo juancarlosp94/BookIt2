@@ -3,7 +3,7 @@ import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
-import styles from "./menu.module.css"
+import styles from "./Menu.module.css"
 import Link from 'next/link';
 import { useContext } from 'react';
 import { AppContext } from '@/app/store/CurrentProvider';
