@@ -1,6 +1,5 @@
 "use client"
 import { useContext, useEffect, useState } from "react";
-import { hotelData } from "../../services/getHotelServices";
 import { HotelCard } from "../molecules/card/card";
 import { Header } from "../molecules/header/header";
 import { hotelRooms } from "@/app/utils/helper";
@@ -22,23 +21,7 @@ export const CardsFilter = ({getHotelsData}) => {
   useEffect(() => {
     setHomePage()
   }, [])
-    // const [hotelsData, setHotelsData] = useState([]);
-
-    // const fetchHotels = async() => {
-    //     try {
-    //         const data = await hotelData();
-    //         setHotelsData(data);
-    //     } catch (error) {
-    //         console.error("An error occurred when tryng to reach hotels information")
-    //     }
-
-    // }
-
-    // useEffect(() => {
-
-    //     fetchHotels();
-
-    // }, []);
+   
 
     useEffect(() => {
         const newDateFrom = new Date(selectedDateFrom);

@@ -35,7 +35,7 @@ export const Menu = () => {
             Home
           </Typography>
           </Link>
-          <Link href={'/hotelsBooked'}>
+          <Link className={styles.labelLink} href={'/hotelsBooked'}>
           <Typography variant="h6"component="div" className={styles.labelMenu}>
             Booked
           </Typography>
