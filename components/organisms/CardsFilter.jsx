@@ -1,7 +1,7 @@
 "use client"
 import { useContext, useEffect, useState } from "react";
-import { HotelCard } from "../molecules/card/card";
-import { Header } from "../molecules/header/header";
+import { HotelCard } from "../molecules/card/Card";
+import { Header } from "../molecules/header/Header";
 import { hotelRooms } from "@/app/utils/helper";
 import { Alert, Snackbar } from "@mui/material";
 import styles from "./cardsFilter.module.css"

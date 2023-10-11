@@ -1,5 +1,5 @@
 'use client'
-import { HotelCard } from "../../molecules/card/card";
+import { HotelCard } from "../../molecules/card/Card";
 import { useSelector } from "react-redux";
 
 export const HotelsBooking = () => {

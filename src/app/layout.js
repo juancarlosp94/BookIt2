@@ -1,4 +1,4 @@
-import { Menu } from '../../components/molecules/menu/menu';
+import { Menu } from '../../components/molecules/menu/Menu';
 import './globals.css';
 import { Pacifico } from 'next/font/google';
 import { CurrentProvider } from './store/CurrentProvider';
